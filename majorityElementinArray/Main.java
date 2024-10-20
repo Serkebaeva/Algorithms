@@ -1,4 +1,4 @@
-package org.example;
+package majorityElementinArray;
 
 import java.util.Arrays;
 
