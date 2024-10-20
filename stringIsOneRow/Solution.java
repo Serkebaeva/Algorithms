@@ -1,4 +1,4 @@
-package Tasks_revisiting.stringIsOneRow;
+package stringIsOneRow;
 
 import java.util.Arrays;
 import java.util.ArrayList;
