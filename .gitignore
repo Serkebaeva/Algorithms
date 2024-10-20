@@ -2,6 +2,11 @@
 /shelf/
 /.idea/workspace.xml
 
+### and some other files
+Algos.iml
+Tasks_revisiting
+.idea/
+
 #### ignore all .idea files ...
 .idea/vcs.xml
 
