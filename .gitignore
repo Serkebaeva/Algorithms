@@ -1,31 +1,45 @@
-# Default ignored files
-/shelf/
-/.idea/workspace.xml
 
 ### and some other files updated..
 .idea/Algos.iml
 Tasks_revisiting
-/target
-.idea/
 
-#### ignore all .idea files ...
-.idea/vcs.xml
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+pom.xml
 
-#### except
+### IntelliJ IDEA ###
+.idea
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
 
-# Version Control configuration for your project
-!vcs.xml
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
 
-# how IDEA should treat the text files in your project
-!encodings.xml
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-# automatic code formatting
-!codeStyleSettings.xml
+### VS Code ###
+.vscode/
 
-# project specific words
-!dictionaries
-
-!copyrights
-!misc.xml
-!sqldialects.xml
-/.metadata/
+### Mac OS ###
+.DS_Store
