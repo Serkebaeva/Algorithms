@@ -5,6 +5,7 @@
 ### and some other files updated..
 .idea/Algos.iml
 Tasks_revisiting
+/target
 .idea/
 
 #### ignore all .idea files ...
