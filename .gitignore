@@ -1,10 +1,4 @@
 
-### and some other files updated..
-.idea/Algos.iml
-Tasks_revisiting
-src
-
-
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
@@ -37,11 +31,40 @@ pom.xml
 /nbdist/
 /.nb-gradle/
 build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
 ### VS Code ###
 .vscode/
 
 ### Mac OS ###
 .DS_Store
+
+# Default ignored files
+/shelf/
+/.idea/workspace.xml
+
+### and some other files updated..
+.idea/Algos.iml
+Tasks_revisiting
+.idea/
+
+#### ignore all .idea files ...
+.idea/vcs.xml
+
+#### except
+
+# Version Control configuration for your project
+!vcs.xml
+
+# how IDEA should treat the text files in your project
+!encodings.xml
+
+# automatic code formatting
+!codeStyleSettings.xml
+
+# project specific words
+!dictionaries
+
+!copyrights
+!misc.xml
+!sqldialects.xml
+/.metadata/
