@@ -1,6 +1,7 @@
 package org.algorithms;
 
 public class IndexOfFirstOccurrenceInAString {
+
   public int strStr(String haystack, String needle) {
     char[] arrHayStack = haystack.toCharArray();
     char[] arrNeedle = needle.toCharArray();
