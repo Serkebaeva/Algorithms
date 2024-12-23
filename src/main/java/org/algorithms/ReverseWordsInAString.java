@@ -1,6 +1,6 @@
 package org.algorithms;
 
-public class ReverseWordsInA_String {
+public class ReverseWordsInAString {
   public String reverseWords(String s) {
     String[] sArray = s.split(" ");
     StringBuilder sb = new StringBuilder();
@@ -16,7 +16,7 @@ public class ReverseWordsInA_String {
   }
 
   public static void main(String[] args) {
-    ReverseWordsInA_String test = new ReverseWordsInA_String();
+    ReverseWordsInAString test = new ReverseWordsInAString();
     System.out.println(
         test.reverseWords(
             "Let's take LeetCode contest")); // Expected output: "s'teL ekat edoCteeL tsetnoc"
