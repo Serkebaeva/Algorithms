@@ -9,7 +9,7 @@ public class MajorityElementInArray {
   public static int majorityElement(int[] nums) {
     Arrays.sort(nums);
     int count = 0;
-    int n = (int) (nums.length / 2);
+    int n = (nums.length / 2);
     int majorityElement = 0;
 
     for (int i = 0; i < nums.length; i++) {
