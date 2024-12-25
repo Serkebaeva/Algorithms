@@ -2,8 +2,11 @@ package org.algorithms;
 
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.logging.Logger;
 
 class IntersectionOfTwoArrays {
+  private static final Logger logger = Logger.getLogger(IntersectionOfTwoArrays.class.getName());
+
   public int[] intersection(int[] nums1, int[] nums2) {
 
     HashSet<Integer> numbers = new HashSet<>();
@@ -20,7 +23,7 @@ class IntersectionOfTwoArrays {
         }
       }
     }
-    System.out.println(numbers);
+    logger.info(() -> String.format("%s", numbers));
     int[] arr = new int[numbers.size()];
     int n = 0;
     for (int num : numbers) {
