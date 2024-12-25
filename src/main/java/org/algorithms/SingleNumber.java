@@ -21,6 +21,6 @@ public class SingleNumber {
   public static void main(String[] args) {
     SingleNumber test = new SingleNumber();
     int[] arr = {4, 1, 2, 1, 2};
-    logger.info(() -> String.format(" " + test.singleNumber(arr))); // Expected output: 4
+    logger.info(() -> String.format("%d", test.singleNumber(arr))); // Expected output: 4
   }
 }

@@ -22,10 +22,10 @@ public class PalindromeNumber {
 
   public static void main(String[] args) {
     PalindromeNumber str = new PalindromeNumber();
-    logger.info(() -> String.format("" + str.isPalindrome(123)));
-    logger.info(() -> String.format("" + str.isPalindrome(121)));
-    logger.info(() -> String.format("" + str.isPalindrome(-121)));
-    logger.info(() -> String.format("" + str.isPalindrome(21)));
-    logger.info(() -> String.format("" + str.isPalindrome(11)));
+    logger.info(() -> String.format("%b", str.isPalindrome(123)));
+    logger.info(() -> String.format("%b", str.isPalindrome(121)));
+    logger.info(() -> String.format("%b", str.isPalindrome(-121)));
+    logger.info(() -> String.format("%b", str.isPalindrome(21)));
+    logger.info(() -> String.format("%b", str.isPalindrome(11)));
   }
 }

@@ -33,6 +33,6 @@ public class IndexOfFirstOccurrenceInAString {
 
     String string3 = "freecodecamp";
     String string4 = "code";
-    logger.info(() -> String.format("" + test.strStr(string3, string4)));
+    logger.info(() -> String.format("%d", test.strStr(string3, string4)));
   }
 }

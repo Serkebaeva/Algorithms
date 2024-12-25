@@ -42,6 +42,6 @@ public class ReverseVowelsOfAString {
   public static void main(String[] args) {
     ReverseVowelsOfAString test = new ReverseVowelsOfAString();
     logger.info(
-        () -> String.format("" + test.reverseVowels("CreAtive"))); // Expected output: "CreitAve"
+        () -> String.format("%s", test.reverseVowels("CreAtive"))); // Expected output: "CreitAve"
   }
 }

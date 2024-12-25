@@ -13,6 +13,6 @@ class LengthOfLastWord {
   }
 
   public static void main(String[] args) {
-    logger.info(() -> String.format("" + lengthOfLastWord("Hello World")));
+    logger.info(() -> String.format("%d", lengthOfLastWord("Hello World")));
   }
 }

@@ -26,6 +26,6 @@ public class ReverseWordsInAString {
             + test.reverseWords(
                 "Let's take LeetCode contest")); // Expected output: "s'teL ekat edoCteeL tsetnoc"
     logger.info(
-        () -> String.format(" " + test.reverseWords("Mr Ding"))); // Expected output: ""rM gniD""
+        () -> String.format("%s", test.reverseWords("Mr Ding"))); // Expected output: ""rM gniD""
   }
 }
