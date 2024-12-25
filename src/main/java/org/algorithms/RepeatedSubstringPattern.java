@@ -1,6 +1,9 @@
 package org.algorithms;
 
+import java.util.logging.Logger;
+
 public class RepeatedSubstringPattern {
+  private static final Logger logger = Logger.getLogger(RepeatedSubstringPattern.class.getName());
 
   public boolean repeatedSubstringPattern(String s) {
     // Create a new string by concatenating s with itself
@@ -39,8 +42,8 @@ public class RepeatedSubstringPattern {
 
   public static void main(String[] args) {
     RepeatedSubstringPattern test = new RepeatedSubstringPattern();
-    System.out.println(test.repeatedSubstringPattern("abab")); // expected outcome true
-    System.out.println(test.repeatedSubstringPattern("aba")); // expected outcome false
-    System.out.println(test.repeatedSubstringPattern("abcabcabc")); // expected outcome true
+    logger.info("" + test.repeatedSubstringPattern("abab")); // expected outcome true
+    logger.info("" + test.repeatedSubstringPattern("aba")); // expected outcome false
+    logger.info("" + test.repeatedSubstringPattern("abcabcabc")); // expected outcome true
   }
 }

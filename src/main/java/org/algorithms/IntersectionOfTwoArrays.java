@@ -1,12 +1,12 @@
 package org.algorithms;
 
-import java.util.HashSet;
 import java.util.Arrays;
+import java.util.HashSet;
 
 class IntersectionOfTwoArrays {
   public int[] intersection(int[] nums1, int[] nums2) {
 
-    HashSet<Integer> numbers = new HashSet<Integer>();
+    HashSet<Integer> numbers = new HashSet<>();
 
     Arrays.sort(nums1);
     Arrays.sort(nums2);
@@ -21,7 +21,7 @@ class IntersectionOfTwoArrays {
       }
     }
     System.out.println(numbers);
-    int arr[] = new int[numbers.size()];
+    int[] arr = new int[numbers.size()];
     int n = 0;
     for (int num : numbers) {
       arr[n++] = num;

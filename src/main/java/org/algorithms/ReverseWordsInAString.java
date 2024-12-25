@@ -1,6 +1,10 @@
 package org.algorithms;
 
+import java.util.logging.Logger;
+
 public class ReverseWordsInAString {
+  private static final Logger logger = Logger.getLogger(ReverseWordsInAString.class.getName());
+
   public String reverseWords(String s) {
     String[] sArray = s.split(" ");
     StringBuilder sb = new StringBuilder();
@@ -17,9 +21,10 @@ public class ReverseWordsInAString {
 
   public static void main(String[] args) {
     ReverseWordsInAString test = new ReverseWordsInAString();
-    System.out.println(
-        test.reverseWords(
-            "Let's take LeetCode contest")); // Expected output: "s'teL ekat edoCteeL tsetnoc"
-    System.out.println(test.reverseWords("Mr Ding")); // Expected output: ""rM gniD""
+    logger.info(
+        " "
+            + test.reverseWords(
+                "Let's take LeetCode contest")); // Expected output: "s'teL ekat edoCteeL tsetnoc"
+    logger.info(" " + test.reverseWords("Mr Ding")); // Expected output: ""rM gniD""
   }
 }

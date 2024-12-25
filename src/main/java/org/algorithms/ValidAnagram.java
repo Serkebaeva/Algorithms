@@ -1,8 +1,11 @@
 package org.algorithms;
 
 import java.util.Arrays;
+import java.util.logging.Logger;
 
 public class ValidAnagram {
+  private static final Logger logger = Logger.getLogger(ValidAnagram.class.getName());
+
   public boolean isAnagram(String s, String t) {
     // Convert strings to Character Arrays
     char[] sArray = s.toLowerCase().toCharArray();
@@ -19,9 +22,9 @@ public class ValidAnagram {
     ValidAnagram test = new ValidAnagram();
     String s = "anagram";
     String t = "nagaram";
-    System.out.println(test.isAnagram(s, t)); // Expected output: true
+    logger.info("" + test.isAnagram(s, t)); // Expected output: true
     String s2 = "car";
     String t2 = "rat";
-    System.out.println(test.isAnagram(s2, t2)); // Expected output: false
+    logger.info("" + test.isAnagram(s2, t2)); // Expected output: false
   }
 }

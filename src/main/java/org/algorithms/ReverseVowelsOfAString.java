@@ -1,6 +1,10 @@
 package org.algorithms;
 
+import java.util.logging.Logger;
+
 public class ReverseVowelsOfAString {
+  private static final Logger logger = Logger.getLogger(ReverseVowelsOfAString.class.getName());
+
   public String reverseVowels(String s) {
     StringBuilder sb = new StringBuilder(s);
     int start = 0;
@@ -37,6 +41,6 @@ public class ReverseVowelsOfAString {
 
   public static void main(String[] args) {
     ReverseVowelsOfAString test = new ReverseVowelsOfAString();
-    System.out.println(test.reverseVowels("CreAtive")); // Expected output: "CreitAve"
+    logger.info("" + test.reverseVowels("CreAtive")); // Expected output: "CreitAve"
   }
 }

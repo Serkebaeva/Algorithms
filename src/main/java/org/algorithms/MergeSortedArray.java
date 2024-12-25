@@ -1,8 +1,11 @@
 package org.algorithms;
 
 import java.util.Arrays;
+import java.util.logging.Logger;
 
 public class MergeSortedArray {
+  private static final Logger logger = Logger.getLogger(MergeSortedArray.class.getName());
+
   public void merge(int[] nums1, int m, int[] nums2, int n) {
     // The edge case when nums1 is empty
     if (m == 0) {
@@ -31,6 +34,6 @@ public class MergeSortedArray {
     int[] nums2 = {2, 5, 6};
     MergeSortedArray test = new MergeSortedArray();
     test.merge(nums1, 3, nums2, 3);
-    System.out.println(Arrays.toString(nums1)); // Expected result [1, 2, 2, 3, 5, 6]
+    logger.info(Arrays.toString(nums1)); // Expected result [1, 2, 2, 3, 5, 6]
   }
 }
