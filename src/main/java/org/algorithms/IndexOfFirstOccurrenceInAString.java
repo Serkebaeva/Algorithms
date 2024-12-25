@@ -29,7 +29,7 @@ public class IndexOfFirstOccurrenceInAString {
     IndexOfFirstOccurrenceInAString test = new IndexOfFirstOccurrenceInAString();
     String string1 = "sadbutsad";
     String string2 = "sad";
-    logger.info("" + test.strStr(string1, string2));
+    logger.info(() -> String.format("%d", test.strStr(string1, string2)));
 
     String string3 = "freecodecamp";
     String string4 = "code";

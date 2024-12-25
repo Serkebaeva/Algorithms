@@ -22,9 +22,12 @@ public class ReverseWordsInAString {
   public static void main(String[] args) {
     ReverseWordsInAString test = new ReverseWordsInAString();
     logger.info(
-        " "
-            + test.reverseWords(
-                "Let's take LeetCode contest")); // Expected output: "s'teL ekat edoCteeL tsetnoc"
+        () ->
+            String.format(
+                "%s",
+                test.reverseWords(
+                    "Let's take LeetCode contest"))); // Expected output: "s'teL ekat edoCteeL
+                                                      // tsetnoc"
     logger.info(
         () -> String.format("%s", test.reverseWords("Mr Ding"))); // Expected output: ""rM gniD""
   }
