@@ -22,6 +22,6 @@ class FindTheDifference {
   }
 
   public static void main(String[] args) {
-    logger.info("" + findTheDifference("abcd", "abcdr"));
+    logger.info(() -> String.format("" + findTheDifference("abcd", "abcdr")));
   }
 }

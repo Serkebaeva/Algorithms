@@ -22,9 +22,9 @@ public class ValidAnagram {
     ValidAnagram test = new ValidAnagram();
     String s = "anagram";
     String t = "nagaram";
-    logger.info("" + test.isAnagram(s, t)); // Expected output: true
+    logger.info(() -> String.format("" + test.isAnagram(s, t))); // Expected output: true
     String s2 = "car";
     String t2 = "rat";
-    logger.info("" + test.isAnagram(s2, t2)); // Expected output: false
+    logger.info(() -> String.format("" + test.isAnagram(s2, t2))); // Expected output: false
   }
 }

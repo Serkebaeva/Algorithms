@@ -25,7 +25,7 @@ public class ContainsDuplicate {
     ContainsDuplicate test = new ContainsDuplicate();
     int[] array1 = {5, 4, 3, 4, 5, 1};
     int[] array2 = {1, 4, 3, 2, 6, 7};
-    logger.info("" + test.containsDuplicate(array1));
-    logger.info("" + test.containsDuplicate(array2));
+    logger.info(() -> String.format("", test.containsDuplicate(array1)));
+    logger.info(() -> String.format("" + test.containsDuplicate(array2)));
   }
 }

@@ -34,6 +34,6 @@ public class MergeSortedArray {
     int[] nums2 = {2, 5, 6};
     MergeSortedArray test = new MergeSortedArray();
     test.merge(nums1, 3, nums2, 3);
-    logger.info(Arrays.toString(nums1)); // Expected result [1, 2, 2, 3, 5, 6]
+    logger.info(() -> String.format(Arrays.toString(nums1))); // Expected result [1, 2, 2, 3, 5, 6]
   }
 }

@@ -25,6 +25,6 @@ class ReverseString {
     ReverseString test = new ReverseString();
     char[] arr = {'h', 'e', 'l', 'l', 'o'};
     test.reverseString(arr);
-    logger.info(Arrays.toString(arr));
+    logger.info(() -> String.format(Arrays.toString(arr)));
   }
 }

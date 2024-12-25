@@ -36,6 +36,6 @@ class StringIsOneRow {
   public static void main(String[] args) {
     StringIsOneRow test = new StringIsOneRow();
     String[] words = {"Hello", "Alaska", "Dad", "Peace"};
-    logger.info(Arrays.toString(test.findWords(words)));
+    logger.info(() -> String.format(Arrays.toString(test.findWords(words))));
   }
 }

@@ -42,8 +42,13 @@ public class RepeatedSubstringPattern {
 
   public static void main(String[] args) {
     RepeatedSubstringPattern test = new RepeatedSubstringPattern();
-    logger.info("" + test.repeatedSubstringPattern("abab")); // expected outcome true
-    logger.info("" + test.repeatedSubstringPattern("aba")); // expected outcome false
-    logger.info("" + test.repeatedSubstringPattern("abcabcabc")); // expected outcome true
+    logger.info(
+        () -> String.format("" + test.repeatedSubstringPattern("abab"))); // expected outcome true
+    logger.info(
+        () -> String.format("" + test.repeatedSubstringPattern("aba"))); // expected outcome false
+    logger.info(
+        () ->
+            String.format(
+                "" + test.repeatedSubstringPattern("abcabcabc"))); // expected outcome true
   }
 }
