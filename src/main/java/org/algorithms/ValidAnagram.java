@@ -1,21 +1,35 @@
 package org.algorithms;
 
-import java.util.Arrays;
 import java.util.logging.Logger;
 
 public class ValidAnagram {
   private static final Logger logger = Logger.getLogger(ValidAnagram.class.getName());
 
   public boolean isAnagram(String s, String t) {
-    // Convert strings to Character Arrays
-    char[] sArray = s.toLowerCase().toCharArray();
-    char[] tArray = t.toLowerCase().toCharArray();
+    if (s.length() != t.length()) {
+      return false;
+    }
 
-    // Sort the arrays
-    Arrays.sort(sArray);
-    Arrays.sort(tArray);
+    int[] sCharCount = new int[26];
+    int[] tCharCount = new int[26];
 
-    return Arrays.equals(sArray, tArray);
+    // Loop through s
+    for (int i = 0; i < s.length(); i++) {
+      sCharCount[s.toLowerCase().charAt(i) - 'a']++;
+    }
+
+    // Loop through t
+    for (int i = 0; i < t.length(); i++) {
+      tCharCount[t.toLowerCase().charAt(i) - 'a']++;
+    }
+
+    for (int i = 0; i < 26; i++) {
+      if (sCharCount[i] != tCharCount[i]) {
+        return false;
+      }
+    }
+
+    return true;
   }
 
   public static void main(String[] args) {
