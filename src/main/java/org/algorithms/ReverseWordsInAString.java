@@ -6,17 +6,32 @@ public class ReverseWordsInAString {
   private static final Logger logger = Logger.getLogger(ReverseWordsInAString.class.getName());
 
   public String reverseWords(String s) {
-    String[] sArray = s.split(" ");
+    char[] sArray = s.toCharArray();
     StringBuilder sb = new StringBuilder();
 
-    for (String word : sArray) {
-      for (int i = word.length() - 1; i >= 0; i--) {
-        sb.append(word.charAt(i));
+    int start = 0;
+
+    // Loop through the Characters in the string
+    for (int j = 0; j <= sArray.length; j++) {
+
+      if (j == sArray.length || sArray[j] == ' ') {
+
+        // Reverse the word from start to j-1
+        for (int i = j - 1; i >= start; i--) {
+          sb.append(sArray[i]);
+        }
+
+        // Add a space if it's not the end of the string
+        if (j != sArray.length) {
+          sb.append(' ');
+        }
+
+        // Update the start index for the next word
+        start = j + 1;
       }
-      sb.append(" ");
     }
 
-    return sb.toString().trim();
+    return sb.toString();
   }
 
   public static void main(String[] args) {
@@ -27,7 +42,7 @@ public class ReverseWordsInAString {
                 "%s",
                 test.reverseWords(
                     "Let's take LeetCode contest"))); // Expected output: "s'teL ekat edoCteeL
-                                                      // tsetnoc"
+    // tsetnoc"
     logger.info(
         () -> String.format("%s", test.reverseWords("Mr Ding"))); // Expected output: ""rM gniD""
   }
