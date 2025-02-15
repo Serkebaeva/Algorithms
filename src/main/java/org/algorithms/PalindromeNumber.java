@@ -1,6 +1,10 @@
 package org.algorithms;
 
+import java.util.logging.Logger;
+
 public class PalindromeNumber {
+  private static final Logger logger = Logger.getLogger(PalindromeNumber.class.getName());
+
   public boolean isPalindrome(int x) {
     if (x < 0) return false;
 
@@ -18,10 +22,10 @@ public class PalindromeNumber {
 
   public static void main(String[] args) {
     PalindromeNumber str = new PalindromeNumber();
-    System.out.println(str.isPalindrome(123));
-    System.out.println(str.isPalindrome(121));
-    System.out.println(str.isPalindrome(-121));
-    System.out.println(str.isPalindrome(21));
-    System.out.println(str.isPalindrome(11));
+    logger.info(() -> String.format("%b", str.isPalindrome(123)));
+    logger.info(() -> String.format("%b", str.isPalindrome(121)));
+    logger.info(() -> String.format("%b", str.isPalindrome(-121)));
+    logger.info(() -> String.format("%b", str.isPalindrome(21)));
+    logger.info(() -> String.format("%b", str.isPalindrome(11)));
   }
 }

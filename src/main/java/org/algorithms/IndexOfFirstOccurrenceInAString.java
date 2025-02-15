@@ -1,6 +1,10 @@
 package org.algorithms;
 
+import java.util.logging.Logger;
+
 public class IndexOfFirstOccurrenceInAString {
+  private static final Logger logger =
+      Logger.getLogger(IndexOfFirstOccurrenceInAString.class.getName());
 
   public int strStr(String haystack, String needle) {
     char[] arrHayStack = haystack.toCharArray();
@@ -25,10 +29,10 @@ public class IndexOfFirstOccurrenceInAString {
     IndexOfFirstOccurrenceInAString test = new IndexOfFirstOccurrenceInAString();
     String string1 = "sadbutsad";
     String string2 = "sad";
-    System.out.println(test.strStr(string1, string2));
+    logger.info(() -> String.format("%d", test.strStr(string1, string2)));
 
     String string3 = "freecodecamp";
     String string4 = "code";
-    System.out.println(test.strStr(string3, string4));
+    logger.info(() -> String.format("%d", test.strStr(string3, string4)));
   }
 }

@@ -1,12 +1,15 @@
 package org.algorithms;
 
 import java.util.Arrays;
+import java.util.logging.Logger;
 
 public class MajorityElementInArray {
+  private static final Logger logger = Logger.getLogger(MajorityElementInArray.class.getName());
+
   public static int majorityElement(int[] nums) {
     Arrays.sort(nums);
     int count = 0;
-    int n = (int) (nums.length / 2);
+    int n = (nums.length / 2);
     int majorityElement = 0;
 
     for (int i = 0; i < nums.length; i++) {
@@ -26,6 +29,6 @@ public class MajorityElementInArray {
 
   public static void main(String[] args) {
     int[] arr = {2, 2, 1, 1, 1, 2, 2};
-    System.out.println(majorityElement(arr));
+    logger.info(() -> String.format("%d", majorityElement(arr)));
   }
 }

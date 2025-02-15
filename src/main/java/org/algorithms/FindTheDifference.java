@@ -2,8 +2,10 @@ package org.algorithms;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 class FindTheDifference {
+  private static final Logger logger = Logger.getLogger(FindTheDifference.class.getName());
 
   public static char findTheDifference(String s, String t) {
     List<Character> arrayList = new ArrayList<>();
@@ -20,6 +22,6 @@ class FindTheDifference {
   }
 
   public static void main(String[] args) {
-    System.out.println(findTheDifference("abcd", "abcdr"));
+    logger.info(() -> String.format("%c", findTheDifference("abcd", "abcdr")));
   }
 }

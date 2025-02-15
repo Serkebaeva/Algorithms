@@ -2,6 +2,7 @@
 target/
 !.mvn/wrapper/maven-wrapper.jar
 pom.xml
+.scannerwork
 
 ### IntelliJ IDEA ###
 .idea
